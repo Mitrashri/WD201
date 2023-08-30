@@ -12,7 +12,7 @@ const todoList = () => {
       // of overdue items accordingly.
       let OverdueTodo = [];
       OverdueTodo = all.filter((TodoList) => TodoList.dueDate < new Date().toISOString().slice(0,10));
-      return OverdueRes;
+      return OverdueTodo;
     }
   
     const dueToday = () => {
